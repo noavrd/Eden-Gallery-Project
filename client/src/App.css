@@ -1,9 +1,7 @@
 body {
   background-image: url('./hero-gradiant-bg.jpg');
 }
-.App {
-  text-align: center;
-}
+
 .nav {
   top: 0px;
   left: 0px;
@@ -39,4 +37,62 @@ body {
 #search {
   opacity: 1;
   margin-left: 20px;
+}
+
+.artist-details {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: 30vw 25vw;
+  top: 230px;
+  margin-left: 143px;
+  width: 571px;
+  height: 548px;
+}
+
+h1 {
+  /* text-align: center; */
+  font: normal normal 600 80px/89px Sora;
+  letter-spacing: 0px;
+  color: #e0d7d7;
+  text-transform: capitalize;
+  /* padding-left: 143px; */
+}
+
+h2 {
+  text-align: left;
+  font: normal normal normal 36px/60px Comfortaa;
+  letter-spacing: 0px;
+  color: #ccbdbd;
+}
+.about {
+  text-align: left;
+  font: normal normal 300 20px/38px Comfortaa;
+  letter-spacing: 0px;
+  color: #ccbdbd;
+}
+
+.show-collections {
+  /* top: 862px; */
+  /* margin-left: 176px; */
+  width: 170px;
+  height: 21px;
+  box-shadow: 0px 15px 50px #0000004a;
+  border: 1px solid #f6f6f7;
+  opacity: 1;
+  text-align: center;
+  font: normal normal medium 17px/32px Sora;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.artist-picture {
+  /* margin-top: 40px; */
+  margin: 20px 0;
+  margin-left: 100px;
+  box-shadow: 0px 30px 60px #0000001a;
+  opacity: 1;
+  height: 600px;
+  width: 700px;
 }
