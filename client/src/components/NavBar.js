@@ -1,8 +1,14 @@
 import search_icon from './search_icon.svg';
+import galySign from './galy-sign.svg';
 
-export default function NavBar() {
+export default function NavBar({ showInquire, setShowInquire }) {
+  const clickHandler = () => {
+    setShowInquire(!showInquire);
+    console.log('yess');
+  };
   return (
     <div className="nav">
+      <img src={galySign} alt="galy-sign" className="sign" />
       <span className="nav-item" id="home-item">
         Home
       </span>
@@ -19,7 +25,9 @@ export default function NavBar() {
         alt="search-icon"
         id="search"
       />
-      <span className="inquire-btn">Inquire Now</span>
+      <span className="inquire-btn" onClick={() => clickHandler()}>
+        Inquire Now
+      </span>
     </div>
   );
 }

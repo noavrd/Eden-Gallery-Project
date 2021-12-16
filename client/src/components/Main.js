@@ -1,9 +1,13 @@
+import { useState } from 'react';
 import NavBar from './NavBar';
 import galyPhoto from './galy-hero-img.jpg';
+import Inquire from './Inquire';
 export default function Main() {
+  const [showInquire, setShowInquire] = useState(false);
+
   return (
     <div>
-      <NavBar />
+      <NavBar showInquire={showInquire} setShowInquire={setShowInquire} />
       <div className="artist-details">
         <div className="right">
           <div>
@@ -20,6 +24,7 @@ export default function Main() {
           <div className="show-collections">View Collections</div>
         </div>
         <div className="left">
+          {showInquire && <Inquire />}
           <img src={galyPhoto} alt="galy-pic" className="artist-picture" />
         </div>
       </div>

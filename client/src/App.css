@@ -3,96 +3,111 @@ body {
 }
 
 .nav {
-  top: 0px;
-  left: 0px;
   background: #000000 0% 0% no-repeat padding-box;
-  opacity: 1;
   font-family: 'Comfortaa', cursive;
-  font-weight: normal;
-  font-size: 18px;
   text-align: right;
-  padding: 14px 0;
+  padding: 1vh 0;
 }
 .nav-item {
-  margin-left: 20px;
-  font: normal normal normal 18px/52px Comfortaa;
-  letter-spacing: 0px;
+  margin-left: 1.8vw;
+  font: normal normal normal 2.5vh/5vh Comfortaa;
   color: #b8b8b8;
-  opacity: 1;
 }
 
+.sign {
+  margin-right: 20vw;
+}
 .inquire-btn {
-  font: normal normal normal 20px/28px Arial;
-  /* font-family: Arial; */
+  font: normal normal normal 2.5vh/5vh Arial;
   color: #ffffff;
-  text-transform: capitalize;
-  opacity: 1;
   background: transparent linear-gradient(79deg, #a53c7a 0%, #e24321 100%) 0% 0%
     no-repeat padding-box;
   border-radius: 6px;
-  margin-left: 20px;
-  padding: 10px 8px;
-  /* padding: 14px 0; */
+  margin: 0 1vw;
+  padding: 1.5vh 1vw;
 }
 #search {
   opacity: 1;
-  margin-left: 20px;
+  margin-left: 1vw;
 }
 
 .artist-details {
   display: grid;
-  grid-column-gap: 50px;
-  grid-template-columns: 30vw 25vw;
-  top: 230px;
-  margin-left: 143px;
-  width: 571px;
-  height: 548px;
+  grid-column-gap: 3vw;
+  grid-template-columns: 30vw 15vw;
+  margin-left: 9vw;
 }
 
 h1 {
-  /* text-align: center; */
-  font: normal normal 600 80px/89px Sora;
-  letter-spacing: 0px;
+  font: normal normal 600 10vh/5vh Sora;
   color: #e0d7d7;
-  text-transform: capitalize;
-  /* padding-left: 143px; */
 }
 
 h2 {
   text-align: left;
-  font: normal normal normal 36px/60px Comfortaa;
-  letter-spacing: 0px;
+  font: normal normal normal 4vh/8vh Comfortaa;
   color: #ccbdbd;
 }
 .about {
   text-align: left;
-  font: normal normal 300 20px/38px Comfortaa;
-  letter-spacing: 0px;
+  font: normal normal 300 2.8vh/4.5vh Comfortaa;
   color: #ccbdbd;
 }
 
 .show-collections {
-  /* top: 862px; */
-  /* margin-left: 176px; */
-  width: 170px;
-  height: 21px;
+  width: 12vw;
+  padding: 2vh 0;
+  margin-top: 2vh;
   box-shadow: 0px 15px 50px #0000004a;
   border: 1px solid #f6f6f7;
-  opacity: 1;
   text-align: center;
-  font: normal normal medium 17px/32px Sora;
-  letter-spacing: 0px;
+  font: normal normal medium 2vh/2vh Sora;
   color: #ffffff;
-  text-transform: capitalize;
-  opacity: 1;
+  border-radius: 6px;
 }
 
 .artist-picture {
-  /* margin-top: 40px; */
   margin: 20px 0;
   margin-left: 100px;
   box-shadow: 0px 30px 60px #0000001a;
-  opacity: 1;
-  height: 600px;
-  width: 700px;
+  height: 80vh;
+  width: 45vw;
+}
+
+.inquire-input {
+  background: #f6f6f6a2 0% 0% no-repeat padding-box;
+  border: 1px solid #747474;
+  opacity: 0.45;
+  backdrop-filter: blur(38px);
+  -webkit-backdrop-filter: blur(38px);
+  text-align: left;
+  font: normal normal normal 16px/18px Comfortaa;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: capitalize;
+  opacity: 0.42;
+}
+
+.inquire-input:focus {
+  outline: none;
+}
+
+.information {
+  text-align: left;
+  font: normal normal normal 26px/42px Sora;
+  color: #f6f6f6;
+}
+
+.end-inquire-information {
+  text-align: left;
+  font: normal normal normal 17px/41px Comfortaa;
+  color: #fbfbfb;
+  opacity: 0.76;
+}
+
+.send-inquire {
+  background: #c23f62 0% 0% no-repeat padding-box;
+  text-align: left;
+  font: normal normal bold 22px/41px Comfortaa;
+  color: #ffffff;
 }
