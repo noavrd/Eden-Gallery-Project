@@ -12,6 +12,7 @@ body {
   margin-left: 1.8vw;
   font: normal normal normal 2.5vh/5vh Comfortaa;
   color: #b8b8b8;
+  cursor: pointer;
 }
 
 .sign {
@@ -25,16 +26,18 @@ body {
   border-radius: 6px;
   margin: 0 1vw;
   padding: 1.5vh 1vw;
+  cursor: pointer;
 }
 #search {
   opacity: 1;
   margin-left: 1vw;
+  cursor: pointer;
 }
 
 .artist-details {
   display: grid;
   grid-column-gap: 3vw;
-  grid-template-columns: 30vw 15vw;
+  grid-template-columns: 30vw 20vw;
   margin-left: 9vw;
 }
 
@@ -64,6 +67,7 @@ h2 {
   font: normal normal medium 2vh/2vh Sora;
   color: #ffffff;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .artist-picture {
@@ -74,40 +78,90 @@ h2 {
   width: 45vw;
 }
 
+.left {
+  position: relative;
+}
+
+.show-inquire {
+  /* transition: 1s; */
+  text-align: center;
+  background-image: url('./hero-gradiant-bg.jpg');
+  position: absolute;
+  width: 40vw;
+  height: 86vh;
+  margin-left: 18vw;
+  animation-name: enter-inquire;
+  animation-duration: 0.5s;
+}
+@keyframes enter-inquire {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+.icon-close {
+  margin-top: 3.5vh;
+  margin-right: 32vw;
+  cursor: pointer;
+}
 .inquire-input {
-  background: #f6f6f6a2 0% 0% no-repeat padding-box;
+  background: #f6f6f6c2 0% 0% no-repeat padding-box;
   border: 1px solid #747474;
   opacity: 0.45;
-  backdrop-filter: blur(38px);
-  -webkit-backdrop-filter: blur(38px);
-  text-align: left;
-  font: normal normal normal 16px/18px Comfortaa;
-  letter-spacing: 0px;
+  /* text-align: left; */
+  font: normal normal normal 2vh/2vh Comfortaa;
   color: #ffffff;
   text-transform: capitalize;
   opacity: 0.42;
+  height: 5vh;
+  margin-top: 2vh;
+  font-weight: bold;
 }
-
+.separate {
+  width: 20.5vw;
+}
 .inquire-input:focus {
   outline: none;
 }
 
 .information {
-  text-align: left;
-  font: normal normal normal 26px/42px Sora;
+  /* text-align: left; */
+  font: normal normal normal 2vh/3vh Sora;
   color: #f6f6f6;
 }
 
 .end-inquire-information {
-  text-align: left;
-  font: normal normal normal 17px/41px Comfortaa;
+  text-align: center;
+  font: normal normal normal 1.3vh/2vh Comfortaa;
   color: #fbfbfb;
   opacity: 0.76;
+  margin-top: 2vh;
 }
 
 .send-inquire {
   background: #c23f62 0% 0% no-repeat padding-box;
-  text-align: left;
-  font: normal normal bold 22px/41px Comfortaa;
+  font: normal normal bold 2vh/2vh Comfortaa;
   color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  width: 20.5vw;
+  text-align: center;
+  margin-top: 2vh;
+  padding: 3vh 0;
+  cursor: pointer;
+}
+
+.container-input {
+  display: grid;
+  grid-column-gap: 0.5vw;
+  grid-template-columns: 10vw 10vw;
+  margin-left: 9.5vw;
+}
+
+/* fix the text are input */
+#ask-information-input {
+  padding: 8vh 0;
 }

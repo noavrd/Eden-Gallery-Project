@@ -24,7 +24,7 @@ export default function Main() {
           <div className="show-collections">View Collections</div>
         </div>
         <div className="left">
-          {showInquire && <Inquire />}
+          {showInquire && <Inquire setShowInquire={setShowInquire} />}
           <img src={galyPhoto} alt="galy-pic" className="artist-picture" />
         </div>
       </div>
