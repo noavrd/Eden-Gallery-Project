@@ -18,28 +18,28 @@ export default function Inquire({ setShowInquire }) {
         <input
           id="first-name-input"
           className="inquire-input"
-          placeHolder="First Name"
+          placeholder="First Name"
         />
         <input
           id="last-name-input"
           className="inquire-input"
-          placeHolder="Last Name"
+          placeholder="Last Name"
         />
       </div>
       <input
         className="inquire-input separate"
-        placeHolder="Email Address"
+        placeholder="Email Address"
         type="email"
       />
       <input
         className="inquire-input separate"
-        placeHolder="Mobile"
+        placeholder="Mobile"
         type="phone"
       />
       <textarea
         id="ask-information-input"
         className="inquire-input separate"
-        placeHolder="Hi, i'm interested in purchasing this artwork. Could you please provide more information?"
+        placeholder="Hi, i'm interested in purchasing this artwork. Could you please provide more information?"
       />
       <div className="end-inquire-information ">
         I would like to receive updates and contacts

@@ -1,18 +1,32 @@
 import search_icon from './search_icon.svg';
 import galySign from './galy-sign.svg';
+import CollectionsScroller from './CollectionsScroller';
+import { useState } from 'react';
 
 export default function NavBar({ showInquire, setShowInquire }) {
+  const [showCollectionScroller, setShowCollectionScroller] = useState(false);
+
   const clickHandler = () => {
     setShowInquire(!showInquire);
-    console.log('yess');
   };
+
+  const showScroller = () => {
+    setShowCollectionScroller(!showCollectionScroller);
+  };
+
   return (
     <div className="nav">
       <img src={galySign} alt="galy-sign" className="sign" />
       <span className="nav-item" id="home-item">
         Home
       </span>
-      <span className="nav-item">Collections</span>
+      <span className="dropdown">
+        <span className="nav-item" onClick={() => showScroller()}>
+          Collections
+        </span>
+        {showCollectionScroller && <CollectionsScroller />}
+      </span>
+
       <span className="nav-item">Artworks</span>
       <span className="nav-item">NFT</span>
       <span className="nav-item">Collaborations</span>
