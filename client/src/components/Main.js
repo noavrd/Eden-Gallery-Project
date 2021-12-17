@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import galyPhoto from './galy-hero-img.jpg';
 import Inquire from './Inquire';
+import Artworks from './Artworks';
+import CollectionsShow from './CollectionsShow';
 export default function Main() {
   const [showInquire, setShowInquire] = useState(false);
   const [artist, setArtist] = useState('');
@@ -19,7 +21,6 @@ export default function Main() {
       },
     })
       .then((res) => {
-        console.log(res);
         return res.json();
       })
       .then((myJson) => {
@@ -39,7 +40,6 @@ export default function Main() {
       },
     })
       .then((res) => {
-        console.log(res);
         return res.json();
       })
       .then((myJson) => {
@@ -75,6 +75,8 @@ export default function Main() {
           <img src={galyPhoto} alt="galy-pic" className="artist-picture" />
         </div>
       </div>
+      <CollectionsShow />
+      <Artworks artworks={artworks} />
     </div>
   );
 }
