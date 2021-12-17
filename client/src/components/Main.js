@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
-import NavBar from './NavBar';
+import NavBar from './navbar/NavBar';
 import galyPhoto from './galy-hero-img.jpg';
 import Inquire from './Inquire';
-import Artworks from './Artworks';
-import CollectionsShow from './CollectionsShow';
+import Artworks from './artworks/Artworks';
+import CollectionsShow from './collections/CollectionsShow';
 import Nft from './Nft';
+import Collaboration from './collaboration/Collaboration';
 export default function Main() {
   const [showInquire, setShowInquire] = useState(false);
   const [artist, setArtist] = useState('');
@@ -79,6 +80,7 @@ export default function Main() {
       <CollectionsShow />
       <Artworks artworks={artworks} />
       <Nft />
+      <Collaboration />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import search_icon from './search_icon.svg';
 import galySign from './galy-sign.svg';
-import CollectionsScroller from './CollectionsScroller';
+import CollectionsScroller from '../collections/CollectionsScroller';
 import { useState } from 'react';
 
 export default function NavBar({ showInquire, setShowInquire }) {
