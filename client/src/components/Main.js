@@ -4,6 +4,7 @@ import galyPhoto from './galy-hero-img.jpg';
 import Inquire from './Inquire';
 import Artworks from './Artworks';
 import CollectionsShow from './CollectionsShow';
+import Nft from './Nft';
 export default function Main() {
   const [showInquire, setShowInquire] = useState(false);
   const [artist, setArtist] = useState('');
@@ -77,6 +78,7 @@ export default function Main() {
       </div>
       <CollectionsShow />
       <Artworks artworks={artworks} />
+      <Nft />
     </div>
   );
 }

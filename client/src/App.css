@@ -1,6 +1,7 @@
 body {
   background-image: url('./hero-gradiant-bg.jpg');
   /* overflow: hidden; */
+  color: #ffffff;
 }
 
 .nav {
@@ -21,7 +22,6 @@ body {
 }
 .inquire-btn {
   font: normal normal normal 2.5vh/5vh Arial;
-  color: #ffffff;
   background: transparent linear-gradient(79deg, #a53c7a 0%, #e24321 100%) 0% 0%
     no-repeat padding-box;
   border-radius: 6px;
@@ -66,7 +66,6 @@ h2 {
   border: 1px solid #f6f6f7;
   text-align: center;
   font: normal normal medium 2vh/2vh Sora;
-  color: #ffffff;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -114,7 +113,6 @@ h2 {
   opacity: 0.45;
   /* text-align: left; */
   font: normal normal normal 2vh/2vh Comfortaa;
-  color: #ffffff;
   text-transform: capitalize;
   opacity: 0.42;
   height: 5vh;
@@ -145,7 +143,6 @@ h2 {
 .send-inquire {
   background: #c23f62 0% 0% no-repeat padding-box;
   font: normal normal bold 2vh/2vh Comfortaa;
-  color: #ffffff;
   border: none;
   border-radius: 6px;
   width: 20.5vw;
@@ -186,4 +183,81 @@ h2 {
 .drop-item {
   /* text-align: left; */
   color: #b8b8b8;
+}
+
+.explore {
+  background: transparent linear-gradient(103deg, #a53c7a 0%, #e24321 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 15px 50px #0000004a;
+  border-radius: 7px;
+  text-align: center;
+  font-family: sora;
+  font-size: 2vh;
+  margin-top: 2vh;
+  padding: 3vh 0;
+  width: 15vw;
+  border: none;
+  cursor: pointer;
+}
+
+.segments {
+  margin-left: 25vw;
+  max-width: 30vw;
+}
+.page-headlines {
+  font: normal normal normal 40px/91px Sora;
+  letter-spacing: 0.28px;
+  color: #e0d7d7;
+}
+
+.segment-details {
+  font: normal normal 300 20px/38px Comfortaa;
+  color: #ccbdbd;
+}
+#nft-picture {
+  background-image: url('./hero\ nft.png');
+  background-size: cover;
+  min-height: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#nft-background {
+  margin-left: 10vw;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 0.7;
+  backdrop-filter: blur(29px);
+  -webkit-backdrop-filter: blur(29px);
+  max-width: 40vw;
+  padding-bottom: 5vh;
+}
+#nft-segment {
+  margin-left: 5vw;
+  max-width: 25vw;
+}
+
+#nft-headline {
+  font: normal normal normal 6vh/10vh Sora;
+  letter-spacing: 0.29px;
+  color: #e0d7d7;
+}
+
+#nft-details {
+  font: normal normal normal 2vh/3vh Comfortaa;
+  color: #ccbdbd;
+}
+
+#nft-btn {
+  text-align: center;
+  font: normal normal normal 2.2vh/3vh Sora;
+  letter-spacing: 0.44px;
+  color: #ffffff;
+  border: 1px solid #f6f6f7;
+  border-radius: 6px;
+  background-color: transparent;
+  width: 18vw;
+  padding: 2vh 0;
+  margin-top: 2vh;
+  cursor: pointer;
 }
