@@ -1,10 +1,57 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import galyPhoto from './galy-hero-img.jpg';
 import Inquire from './Inquire';
 export default function Main() {
   const [showInquire, setShowInquire] = useState(false);
+  const [artist, setArtist] = useState('');
+  const [artworks, setArtworks] = useState([]);
 
+  //Get artist
+  const getArtist = () => {
+    fetch('DB/artists.json', {
+      method: 'GET',
+      headers: {
+        Authorization: 'deWcjOgQPiR6PVzUWqJLfYcBlljUjIVELOmiMStOXBCFodCQGq',
+        Pass: 'PNUt5uF4Kp4qEvGg8gCO3EtLJ7km2EMkiIVRmgmGzNb1LfYAi7',
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    })
+      .then((res) => {
+        console.log(res);
+        return res.json();
+      })
+      .then((myJson) => {
+        console.log(myJson);
+        setArtist(myJson);
+      });
+  };
+
+  const getArtworks = () => {
+    fetch('DB/artworks.json', {
+      method: 'GET',
+      headers: {
+        Authorization: 'deWcjOgQPiR6PVzUWqJLfYcBlljUjIVELOmiMStOXBCFodCQGq',
+        Pass: 'PNUt5uF4Kp4qEvGg8gCO3EtLJ7km2EMkiIVRmgmGzNb1LfYAi7',
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    })
+      .then((res) => {
+        console.log(res);
+        return res.json();
+      })
+      .then((myJson) => {
+        console.log(myJson);
+        setArtworks(myJson);
+      });
+  };
+
+  useEffect(() => {
+    getArtist();
+    getArtworks();
+  }, []);
   return (
     <div>
       <NavBar showInquire={showInquire} setShowInquire={setShowInquire} />
