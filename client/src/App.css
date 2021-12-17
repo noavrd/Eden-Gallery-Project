@@ -314,3 +314,47 @@ h2 {
   /* max-width: 35vw; */
   height: 50vh;
 }
+
+.subscribe {
+  text-align: center;
+}
+
+.end-title {
+  font: normal normal normal 4vh Sora;
+  letter-spacing: 0.25px;
+  color: #e0d7d7;
+}
+
+.end-details {
+  font: normal normal normal 3vh/9vh Comfortaa;
+  color: #f6f6f6;
+}
+.subscribe-reg {
+  display: grid;
+  grid-template-columns: 25vw 12vw;
+  margin-bottom: 2vh;
+  margin-left: 32vw;
+  /* margin-top: 2vh; */
+}
+.subscribe-input {
+  border-radius: 5px 0 0 5px;
+  font: normal normal normal 3vh/5vh Comfortaa;
+  color: #0f0e0e;
+  opacity: 0.9;
+  border: none;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding-left: 1vw;
+}
+
+.subscribe-input:focus {
+  outline: none;
+}
+
+.subscribe-btn {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background: transparent linear-gradient(112deg, #a53c7a 0%, #e24321 100%) 0%
+    0% no-repeat padding-box;
+  color: #f6f6f6;
+  font: normal normal normal 3vh/5vh Comfortaa;
+}

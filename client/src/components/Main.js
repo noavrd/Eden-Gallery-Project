@@ -6,6 +6,7 @@ import Artworks from './artworks/Artworks';
 import CollectionsShow from './collections/CollectionsShow';
 import Nft from './Nft';
 import Collaboration from './collaboration/Collaboration';
+import Subscribe from './Subscribe';
 export default function Main() {
   const [showInquire, setShowInquire] = useState(false);
   const [artist, setArtist] = useState('');
@@ -81,6 +82,7 @@ export default function Main() {
       <Artworks artworks={artworks} />
       <Nft />
       <Collaboration />
+      <Subscribe />
     </div>
   );
 }
