@@ -204,6 +204,8 @@ h2 {
 
 .segments {
   margin-left: 25vw;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
   max-width: 30vw;
 }
 .page-headlines {
@@ -263,4 +265,52 @@ h2 {
   padding: 2vh 0;
   margin-top: 5vh;
   cursor: pointer;
+}
+
+/* #coll {
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+} */
+.single-coll {
+  /* margin-top: 8vh; */
+  margin: 8vh 0 0 9vw;
+  /* justify-content: center; */
+  height: 50vh;
+  display: grid;
+  /* grid-column-gap: 3vw; */
+  grid-template-columns: 40vw 40vw;
+}
+.information-coll {
+  background: #e0d7d7 0% 0% no-repeat padding-box;
+  /* margin: auto; */
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 10vh;
+  padding-left: 5vw;
+}
+
+.title-coll {
+  font: normal normal normal 3.8vh/7vh Sora;
+  color: #000000;
+}
+
+.details-coll {
+  padding-right: 6.5vw;
+  font: normal normal normal 2.3vh/4vh Comfortaa;
+  color: #000000;
+  opacity: 0.85;
+}
+
+.btn-coll {
+  text-decoration: underline;
+  font: normal normal normal 2.8vh/5vh Sora;
+  color: #000000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 3vh;
+}
+.pic-roll {
+  /* max-width: 35vw; */
+  height: 50vh;
 }
