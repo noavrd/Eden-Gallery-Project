@@ -14,27 +14,27 @@ export default function Main() {
   const [artworks, setArtworks] = useState([]);
 
   //Get artist
-  const getArtist = () => {
-    fetch('DB/artists.json', {
-      method: 'GET',
-      headers: {
-        Authorization: 'deWcjOgQPiR6PVzUWqJLfYcBlljUjIVELOmiMStOXBCFodCQGq',
-        Pass: 'PNUt5uF4Kp4qEvGg8gCO3EtLJ7km2EMkiIVRmgmGzNb1LfYAi7',
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-    })
-      .then((res) => {
-        return res.json();
-      })
-      .then((myJson) => {
-        console.log(myJson);
-        setArtist(myJson);
-      });
-  };
+  // const getArtist = () => {
+  //   fetch('DB/artists.json', {
+  //     method: 'GET',
+  //     headers: {
+  //       Authorization: 'deWcjOgQPiR6PVzUWqJLfYcBlljUjIVELOmiMStOXBCFodCQGq',
+  //       Pass: 'PNUt5uF4Kp4qEvGg8gCO3EtLJ7km2EMkiIVRmgmGzNb1LfYAi7',
+  //       'Content-Type': 'application/json',
+  //       Accept: 'application/json',
+  //     },
+  //   })
+  //     .then((res) => {
+  //       return res.json();
+  //     })
+  //     .then((myJson) => {
+  //       console.log(myJson);
+  //       setArtist(myJson);
+  //     });
+  // };
 
   const getArtworks = () => {
-    fetch('DB/artworks.json', {
+    fetch('https://api.eden-gallery.com/artworks', {
       method: 'GET',
       headers: {
         Authorization: 'deWcjOgQPiR6PVzUWqJLfYcBlljUjIVELOmiMStOXBCFodCQGq',
@@ -51,9 +51,9 @@ export default function Main() {
         setArtworks(myJson);
       });
   };
-
+  console.log(artworks);
   useEffect(() => {
-    getArtist();
+    // getArtist();
     getArtworks();
   }, []);
   return (
