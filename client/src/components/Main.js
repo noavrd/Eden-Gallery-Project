@@ -7,6 +7,7 @@ import CollectionsShow from './collections/CollectionsShow';
 import Nft from './Nft';
 import Collaboration from './collaboration/Collaboration';
 import Subscribe from './Subscribe';
+import DownNav from '../downNav/DownNav';
 export default function Main() {
   const [showInquire, setShowInquire] = useState(false);
   const [artist, setArtist] = useState('');
@@ -83,6 +84,7 @@ export default function Main() {
       <Nft />
       <Collaboration />
       <Subscribe />
+      <DownNav />
     </div>
   );
 }
