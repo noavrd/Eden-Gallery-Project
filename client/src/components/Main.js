@@ -36,7 +36,11 @@ export default function Main() {
   }, []);
   return (
     <div>
-      <NavBar showInquire={showInquire} setShowInquire={setShowInquire} />
+      <NavBar
+        showInquire={showInquire}
+        setShowInquire={setShowInquire}
+        artworks={artworks}
+      />
       <div className="artist-details">
         <div className="right">
           <div>

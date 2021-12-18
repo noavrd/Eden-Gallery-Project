@@ -1,0 +1,19 @@
+.search-total {
+  display: grid;
+  grid-template-columns: 80vw 5vw;
+}
+
+.search-input {
+  /* position: absolute; */
+  margin-left: 10vw;
+  color: #b8b8b8;
+  font: normal normal bold 2vh/2vh Comfortaa;
+  opacity: 0.83;
+  border: none;
+  border-bottom: 1px solid #b8b8b8;
+  background-color: transparent;
+}
+
+.search-input:focus {
+  outline: none;
+}

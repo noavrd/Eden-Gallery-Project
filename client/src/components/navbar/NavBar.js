@@ -1,12 +1,13 @@
 import '../../styles/navbar.css';
-
 import search_icon from './search_icon.svg';
 import galySign from './galy-sign.svg';
+import scrollerUp from './Icon -arrow-drop-down.svg';
+
 import CollectionsScroller from '../collections/CollectionsScroller';
 import { useState } from 'react';
 import Search from '../Search';
 
-export default function NavBar({ showInquire, setShowInquire }) {
+export default function NavBar({ showInquire, setShowInquire, artworks }) {
   const [showCollectionScroller, setShowCollectionScroller] = useState(false);
   const [search, setSearch] = useState(false);
 
@@ -28,9 +29,19 @@ export default function NavBar({ showInquire, setShowInquire }) {
         Home
       </span>
       <span className="dropdown">
-        <span className="nav-item" onClick={() => showScroller()}>
-          Collections
-        </span>
+        <div onClick={() => showScroller()}>
+          <span className="nav-item">Collections</span>
+
+          <img
+            src={scrollerUp}
+            alt="scroller"
+            className={
+              showCollectionScroller
+                ? 'up-scroller scroller'
+                : 'down-scroller scroller'
+            }
+          />
+        </div>
         {showCollectionScroller && <CollectionsScroller />}
       </span>
 
@@ -52,7 +63,7 @@ export default function NavBar({ showInquire, setShowInquire }) {
       <span className="inquire-btn" onClick={() => clickHandler()}>
         Inquire Now
       </span>
-      {search && <Search />}
+      {search && <Search artworks={artworks} />}
     </div>
   );
 }
