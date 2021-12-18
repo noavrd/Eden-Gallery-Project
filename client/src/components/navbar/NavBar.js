@@ -6,6 +6,7 @@ import scrollerUp from './Icon -arrow-drop-down.svg';
 import CollectionsScroller from '../collections/CollectionsScroller';
 import { useState } from 'react';
 import Search from '../search/Search';
+import { Link } from 'react-router-dom';
 
 export default function NavBar({ showInquire, setShowInquire, artworks }) {
   const [showCollectionScroller, setShowCollectionScroller] = useState(false);
@@ -25,9 +26,11 @@ export default function NavBar({ showInquire, setShowInquire, artworks }) {
   return (
     <div className="nav">
       <img src={galySign} alt="galy-sign" className="sign" />
-      <span className="nav-item" id="home-item">
-        Home
-      </span>
+      <Link to="/">
+        <span className="nav-item" id="home-item">
+          Home
+        </span>
+      </Link>
       <span className="dropdown">
         <div onClick={() => showScroller()}>
           <span className="nav-item">Collections</span>
