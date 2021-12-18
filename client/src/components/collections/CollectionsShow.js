@@ -1,6 +1,6 @@
 export default function CollectionShow() {
   return (
-    <div className="segments">
+    <div id="collection-total" className="segments">
       <div className="page-headlines">Collections</div>
       <span className="segment-details">
         The Galy collection blends cartoon classics with modern storytelling.

@@ -1,3 +1,4 @@
+import '../styles/nft.css';
 export default function Nft() {
   return (
     <div id="nft-picture">

@@ -7,31 +7,10 @@ import CollectionsShow from './collections/CollectionsShow';
 import Nft from './Nft';
 import Collaboration from './collaboration/Collaboration';
 import Subscribe from './Subscribe';
-import DownNav from '../downNav/DownNav';
+import DownNav from './downNav/DownNav';
 export default function Main() {
   const [showInquire, setShowInquire] = useState(false);
-  const [artist, setArtist] = useState('');
   const [artworks, setArtworks] = useState([]);
-
-  //Get artist
-  // const getArtist = () => {
-  //   fetch('DB/artists.json', {
-  //     method: 'GET',
-  //     headers: {
-  //       Authorization: 'deWcjOgQPiR6PVzUWqJLfYcBlljUjIVELOmiMStOXBCFodCQGq',
-  //       Pass: 'PNUt5uF4Kp4qEvGg8gCO3EtLJ7km2EMkiIVRmgmGzNb1LfYAi7',
-  //       'Content-Type': 'application/json',
-  //       Accept: 'application/json',
-  //     },
-  //   })
-  //     .then((res) => {
-  //       return res.json();
-  //     })
-  //     .then((myJson) => {
-  //       console.log(myJson);
-  //       setArtist(myJson);
-  //     });
-  // };
 
   const getArtworks = () => {
     fetch('https://api.eden-gallery.com/artworks', {
@@ -53,7 +32,6 @@ export default function Main() {
   };
   console.log(artworks);
   useEffect(() => {
-    // getArtist();
     getArtworks();
   }, []);
   return (

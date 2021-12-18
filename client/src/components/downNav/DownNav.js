@@ -1,3 +1,5 @@
+import '../../styles/downNav.css';
+
 import facebook from './FB.svg';
 import be from './BE.svg';
 import discord from './DIS.svg';

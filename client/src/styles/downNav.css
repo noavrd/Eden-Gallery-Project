@@ -1,0 +1,85 @@
+.subscribe {
+  margin-top: 5vh;
+  padding: 5vh 0;
+  text-align: center;
+  background-color: black;
+}
+
+.end-title {
+  font: normal normal normal 4vh Sora;
+  letter-spacing: 0.25px;
+  color: #e0d7d7;
+}
+
+.end-details {
+  font: normal normal normal 3vh/9vh Comfortaa;
+  color: #f6f6f6;
+}
+.subscribe-reg {
+  display: grid;
+  grid-template-columns: 25vw 12vw;
+  margin-bottom: 2vh;
+  margin-left: 32vw;
+  /* margin-top: 2vh; */
+}
+.subscribe-input {
+  border-radius: 5px 0 0 5px;
+  font: normal normal normal 3vh/5vh Comfortaa;
+  color: #0f0e0e;
+  opacity: 0.9;
+  border: none;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding-left: 1vw;
+}
+
+.subscribe-input:focus {
+  outline: none;
+}
+
+.subscribe-btn {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background: transparent linear-gradient(112deg, #a53c7a 0%, #e24321 100%) 0%
+    0% no-repeat padding-box;
+  color: #f6f6f6;
+  font: normal normal normal 3vh/5vh Comfortaa;
+}
+
+.total-down-nav {
+  background-image: url('../hero-gradiant-bg.jpg');
+  padding-top: 5vh;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+}
+
+.first-down-item,
+.second-down-item {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.89px;
+  color: #ccbdbd;
+}
+.first-down-item {
+  font: normal normal normal 2.5vh/7vh Sora;
+}
+
+.second-down-item {
+  font: normal normal normal 2.5vh/5vh Sora;
+}
+
+.third-down-item {
+  font: normal normal normal 2.5vh/5vh Sora;
+  color: #ccbdbd;
+  letter-spacing: 0.89px;
+}
+.all-icons-third {
+  margin-top: 5vh;
+  display: grid;
+  grid-column-gap: 0.5vw;
+  grid-template-columns: 3vw 3vw 3vw 3vw 3vw;
+}
+.icons-third-down {
+  cursor: pointer;
+}

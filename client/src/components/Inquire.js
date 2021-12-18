@@ -1,3 +1,5 @@
+import '../styles/inquire.css';
+
 import iconClose from './icon-close.svg';
 export default function Inquire({ setShowInquire }) {
   const closeHandler = () => {

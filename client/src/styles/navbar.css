@@ -1,0 +1,30 @@
+.nav {
+  background: #000000 0% 0% no-repeat padding-box;
+  font-family: 'Comfortaa', cursive;
+  text-align: right;
+  padding: 1vh 0;
+}
+.nav-item {
+  margin-left: 1.8vw;
+  font: normal normal normal 2.5vh/5vh Comfortaa;
+  color: #b8b8b8;
+  cursor: pointer;
+}
+
+.sign {
+  margin-right: 20vw;
+}
+.inquire-btn {
+  font: normal normal normal 2.5vh/5vh Arial;
+  background: transparent linear-gradient(79deg, #a53c7a 0%, #e24321 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 6px;
+  margin: 0 1vw;
+  padding: 1.5vh 1vw;
+  cursor: pointer;
+}
+#search {
+  opacity: 1;
+  margin-left: 1vw;
+  cursor: pointer;
+}

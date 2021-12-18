@@ -1,0 +1,83 @@
+.show-inquire {
+  /* transition: 1s; */
+  text-align: center;
+  background-image: url('../hero-gradiant-bg.jpg');
+  position: absolute;
+  width: 40vw;
+  height: 86vh;
+  margin-left: 18vw;
+  animation-name: enter-inquire;
+  animation-duration: 0.5s;
+}
+@keyframes enter-inquire {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+.icon-close {
+  margin-top: 3.5vh;
+  margin-right: 32vw;
+  cursor: pointer;
+}
+.inquire-input {
+  background: #f6f6f6c2 0% 0% no-repeat padding-box;
+  border: 1px solid #747474;
+  opacity: 0.45;
+  /* text-align: left; */
+  font: normal normal normal 2vh/2vh Comfortaa;
+  text-transform: capitalize;
+  opacity: 0.42;
+  height: 5vh;
+  margin-top: 2vh;
+  font-weight: bold;
+}
+.separate {
+  width: 20.5vw;
+}
+.inquire-input:focus {
+  outline: none;
+}
+
+.information {
+  /* text-align: left; */
+  font: normal normal normal 2vh/3vh Sora;
+  color: #f6f6f6;
+}
+
+.end-inquire-information {
+  text-align: center;
+  font: normal normal normal 1.3vh/2vh Comfortaa;
+  color: #fbfbfb;
+  opacity: 0.76;
+  margin-top: 2vh;
+}
+
+.send-inquire {
+  background: #c23f62 0% 0% no-repeat padding-box;
+  font: normal normal bold 2vh/2vh Comfortaa;
+  border: none;
+  border-radius: 6px;
+  width: 20.5vw;
+  text-align: center;
+  margin-top: 2vh;
+  padding: 3vh 0;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.container-input {
+  display: grid;
+  grid-column-gap: 0.5vw;
+  grid-template-columns: 10vw 10vw;
+  margin-left: 9.5vw;
+}
+
+/* fix the text are input */
+#ask-information-input {
+  padding: 8vh 0;
+  overflow: hidden;
+}

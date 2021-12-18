@@ -1,3 +1,4 @@
+import '../../styles/collaborations.css';
 import collOne from './colloberation 1.jpg';
 import collTwo from './colloberation 2.jpg';
 import collThree from './colloberation 3.jpg';
