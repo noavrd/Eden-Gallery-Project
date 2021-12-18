@@ -1,6 +1,7 @@
 .search-total {
   display: grid;
-  grid-template-columns: 80vw 5vw;
+  margin-left: 10vw;
+  grid-template-columns: 70vw 5vw;
 }
 
 .search-input {
@@ -16,4 +17,39 @@
 
 .search-input:focus {
   outline: none;
+}
+
+.exit-search {
+  position: absolute;
+  left: 0;
+  margin-left: 15vw;
+  padding-top: 5vh;
+  position: absolute;
+  cursor: pointer;
+}
+.single-result-bar {
+  text-align: left;
+  margin-top: 3vh;
+  margin-left: 10vw;
+  padding-bottom: 2vh;
+  display: grid;
+  grid-template-columns: 8vw 20vw;
+  grid-column-gap: 3vw;
+  border-bottom: 1px solid #7e7e7e;
+}
+
+.result-artwork {
+  width: 6vw;
+  height: 8vh;
+}
+.right-bar {
+  margin-top: 4vh;
+  font-size: 2vh;
+}
+.result-name {
+  margin-bottom: 1vh;
+}
+.left-bar {
+  margin-top: 2vh;
+  margin-left: 2vw;
 }

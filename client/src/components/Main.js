@@ -26,14 +26,14 @@ export default function Main() {
         return res.json();
       })
       .then((myJson) => {
-        console.log(myJson);
         setArtworks(myJson);
       });
   };
-  console.log(artworks);
+
   useEffect(() => {
     getArtworks();
   }, []);
+
   return (
     <div>
       <NavBar

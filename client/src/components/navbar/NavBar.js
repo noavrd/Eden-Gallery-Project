@@ -5,7 +5,7 @@ import scrollerUp from './Icon -arrow-drop-down.svg';
 
 import CollectionsScroller from '../collections/CollectionsScroller';
 import { useState } from 'react';
-import Search from '../Search';
+import Search from '../search/Search';
 
 export default function NavBar({ showInquire, setShowInquire, artworks }) {
   const [showCollectionScroller, setShowCollectionScroller] = useState(false);
@@ -63,7 +63,7 @@ export default function NavBar({ showInquire, setShowInquire, artworks }) {
       <span className="inquire-btn" onClick={() => clickHandler()}>
         Inquire Now
       </span>
-      {search && <Search artworks={artworks} />}
+      {search && <Search artworks={artworks} setSearch={setSearch} />}
     </div>
   );
 }
