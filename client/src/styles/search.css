@@ -53,3 +53,9 @@
   margin-top: 2vh;
   margin-left: 2vw;
 }
+
+.search-headline {
+  text-align: center;
+  font: normal normal normal 6vh/5vh Sora;
+  color: #fbfbfb;
+}

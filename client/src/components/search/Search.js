@@ -3,6 +3,7 @@ import '../../styles/search.css';
 import search from '../navbar/search_icon.svg';
 import SingleResultBar from './SingleResultBar';
 import close from '../icon-close.svg';
+import { Link } from 'react-router-dom';
 export default function Search({ setSearch }) {
   const [results, setResults] = useState([]);
 
@@ -22,16 +23,12 @@ export default function Search({ setSearch }) {
       },
     })
       .then((res) => {
-        // console.log(res);
         return res.json();
       })
       .then((myJson) => {
-        console.log(myJson);
-
         setResults(myJson);
       });
   };
-  console.log(results);
   if (results === []) {
     return (
       <div className="search-total">
@@ -51,8 +48,9 @@ export default function Search({ setSearch }) {
           className="search-input"
           onChange={(event) => getResultsFromInput(event.target.value)}
         />
-        <img src={search} alt="search-icon" className="search-icon-input" />
-
+        <Link to={'/search'} state={{ results: results }}>
+          <img src={search} alt="search-icon" className="search-icon-input" />
+        </Link>
         {results.length > 0 && (
           <div className="search-results">
             <div className="result-bar">
@@ -65,7 +63,6 @@ export default function Search({ setSearch }) {
               {results.map((item, i) => (
                 <SingleResultBar result={item} key={i} />
               ))}
-              {console.log(results)}
             </div>
           </div>
         )}
