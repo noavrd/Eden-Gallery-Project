@@ -1,16 +1,6 @@
 body {
   background-image: url('./hero-gradiant-bg.jpg');
-  /* background-size: cover; */
-  /* overflow: hidden; */
-
   color: #ffffff;
-}
-
-.artist-details {
-  display: grid;
-  grid-column-gap: 3vw;
-  grid-template-columns: 30vw 20vw;
-  margin-left: 9vw;
 }
 
 h1 {
@@ -48,11 +38,6 @@ h2 {
   box-shadow: 0px 30px 60px #0000001a;
   height: 80vh;
   width: 45vw;
-  /* position: absolute; */
-}
-
-.left {
-  /* position: absolute; */
 }
 
 .dropdown {
@@ -61,26 +46,18 @@ h2 {
 }
 
 .dropdown-content {
-  /* padding-left: -5vw; */
-
   text-align: left;
   position: absolute;
-  /* display: none; */
-  /* display: inline-block; */
   list-style: none;
   background: #1e181b 0% 0% no-repeat padding-box;
   box-shadow: 0px 30px 60px #0000002f;
-  /* margin-left: 36vw; */
   margin-top: 1vh;
   width: 12vw;
-  /* padding-rig: 1vw; */
 }
 
 .drop-item {
-  /* text-align: left; */
   margin-right: 2vw;
   margin-top: 2vh;
-
   margin-bottom: 2vh;
   color: #b8b8b8;
   border-bottom: 1px solid #b8b8b8;
@@ -102,8 +79,37 @@ h2 {
   font: normal normal 300 20px/38px Comfortaa;
   color: #ccbdbd;
 }
+@media only screen and (min-width: 768px) {
+  .artist-details {
+    display: grid;
+    grid-column-gap: 3vw;
+    grid-template-columns: 30vw 20vw;
+    margin-left: 9vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    margin-left: 10vw;
+  }
+  h1 {
+    font: normal normal 600 12vh/5vh Sora;
+  }
 
-/* #coll {
-  margin-top: 25vh;
-  margin-bottom: 25vh;
-} */
+  h2 {
+    font: normal normal normal 5vh/8vh Comfortaa;
+  }
+
+  .show-collections {
+    display: none;
+  }
+
+  .artist-picture {
+    box-shadow: 0px 30px 60px #0000001a;
+    height: 80vh;
+    width: 80vw;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-right: 10vw;
+  }
+}

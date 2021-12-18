@@ -35,7 +35,7 @@ export default function Inquire({ setShowInquire }) {
       />
       <input
         className="inquire-input separate"
-        placeholder="Mobile"
+        placeholder="Mobile +972"
         type="phone"
       />
       <textarea

@@ -47,6 +47,9 @@ export default function Search({ setSearch }) {
           placeholder="Search anything: artwork name, collection name & articles"
           className="search-input"
           onChange={(event) => getResultsFromInput(event.target.value)}
+          onKeyPress={() => {
+            console.log('keyyyy');
+          }}
         />
         <Link to={'/search'} state={{ results: results }}>
           <img src={search} alt="search-icon" className="search-icon-input" />
