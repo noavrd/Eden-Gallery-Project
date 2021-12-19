@@ -89,10 +89,13 @@ h2 {
 }
 @media only screen and (max-width: 600px) {
   body {
-    margin-left: 10vw;
+    margin-left: 6vw;
   }
   h1 {
+    /* margin-bottom: 15vh; */
+    display: block;
     font: normal normal 600 12vh/5vh Sora;
+    margin-top: 5vh;
   }
 
   h2 {
