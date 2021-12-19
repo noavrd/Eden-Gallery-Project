@@ -79,9 +79,8 @@ a:active {
 
   .all-nav-mobile {
     animation-name: nav-inquire;
-    animation-duration: 0.8s;
+    animation-duration: 1s;
     display: block;
-
     background-image: url('../hero-gradiant-bg.jpg');
     left: 0;
     position: fixed;
@@ -127,6 +126,9 @@ a:active {
     cursor: pointer;
   }
 
+  .exit-search {
+    display: none;
+  }
   .nav {
     display: none;
   }

@@ -40,7 +40,7 @@
   .single-coll {
     margin-top: 13vh;
     margin-left: 0;
-    margin-left: 6vw;
+    margin-left: 8vw;
     display: grid;
     grid-template-columns: 1fr;
   }

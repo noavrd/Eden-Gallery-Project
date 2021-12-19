@@ -89,32 +89,31 @@ h2 {
 }
 @media only screen and (max-width: 600px) {
   body {
-    margin-left: 6vw;
+    margin-left: 3vw;
     position: relative;
   }
   h1 {
-    /* margin-bottom: 15vh; */
     display: block;
     font: normal normal 600 12vh/5vh Sora;
     margin-top: 5vh;
-    margin-left: 6vw;
+    margin-left: 3vw;
   }
 
   h2 {
-    font: normal normal normal 5vh/8vh Comfortaa;
-    margin-left: 6vw;
+    font: normal normal normal 4vh/8vh Comfortaa;
+    margin-left: 3vw;
   }
 
   .show-collections {
     display: none;
   }
   .about {
-    margin-left: 6vw;
+    margin-left: 3vw;
 
-    width: 80vw;
+    width: 75vw;
   }
   .artist-picture {
-    margin-left: 6vw;
+    margin-left: 3vw;
 
     box-shadow: 0px 30px 60px #0000001a;
     height: 80vh;
@@ -126,9 +125,37 @@ h2 {
   }
 
   .segments {
-    margin-left: 6vw;
+    margin-left: 3vw;
     margin-top: 25vh;
     margin-bottom: 25vh;
     max-width: 70vw;
+  }
+
+  .dropdown-content {
+    padding-left: 0;
+    text-align: center;
+    position: relative;
+    background-color: transparent;
+    margin-top: 1vh;
+    width: 100%;
+    justify-content: center;
+    animation-name: dropdown;
+    animation-duration: 1s;
+  }
+
+  .drop-item {
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border-bottom: none;
+  }
+
+  @keyframes dropdown {
+    0% {
+      -webkit-transform: translateY(-20%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+    }
   }
 }

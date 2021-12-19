@@ -87,7 +87,7 @@
   .subscribe {
     text-align: left;
     margin-top: 20vh;
-    margin-left: -5vw;
+    margin-left: -2vw;
     padding-left: 2vw;
   }
   .subscribe-reg {
@@ -125,7 +125,7 @@
     grid-column-gap: 0.5vw;
 
     grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
-    margin: 2vh 0 5vh 23vw;
+    margin: 2vh 0 5vh 25vw;
   }
   .subscribe-btn,
   .subscribe-input {

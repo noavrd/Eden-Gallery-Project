@@ -78,19 +78,21 @@ export default function NavBar({ showInquire, setShowInquire, artworks }) {
                     Home
                   </span>
                 </Link>
-                {/* onClick={() => showScroller()} */}
                 <div className="nav-item-mobile">
-                  <span>Collections</span>
+                  <div onClick={() => showScroller()}>
+                    <span>Collections</span>
 
-                  <img
-                    src={scrollerUp}
-                    alt="scroller"
-                    className={
-                      showCollectionScroller
-                        ? 'up-scroller scroller'
-                        : 'down-scroller scroller'
-                    }
-                  />
+                    <img
+                      src={scrollerUp}
+                      alt="scroller"
+                      className={
+                        showCollectionScroller
+                          ? 'up-scroller scroller'
+                          : 'down-scroller scroller'
+                      }
+                    />
+                  </div>
+                  {showCollectionScroller && <CollectionsScroller />}
                 </div>
                 <div className="nav-item-mobile">Artworks</div>
                 <div className="nav-item-mobile">NFT</div>
@@ -139,7 +141,6 @@ export default function NavBar({ showInquire, setShowInquire, artworks }) {
         {!search && (
           <img
             src={search_icon}
-            // className="nav-item"
             alt="search-icon"
             id="search"
             onClick={() => showSearch()}
