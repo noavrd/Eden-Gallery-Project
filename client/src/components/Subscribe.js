@@ -1,3 +1,5 @@
+import '../styles/downNav.css';
+
 export default function Subscribe() {
   return (
     <div className="subscribe">
