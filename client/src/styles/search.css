@@ -60,9 +60,21 @@
   color: #fbfbfb;
 }
 @media only screen and (max-width: 600px) {
+  .exit-search {
+    margin-left: 6vw;
+  }
   .mobile-search {
     display: grid;
     grid-template-columns: 80vw 5vw;
     margin-bottom: 2vh;
+  }
+  .result-artwork {
+    width: 15vw;
+    height: 10vh;
+  }
+  .right-bar {
+    margin-top: 3vh;
+    margin-left: 10vw;
+    width: 40vw;
   }
 }
