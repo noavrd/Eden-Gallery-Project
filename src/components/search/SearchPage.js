@@ -11,7 +11,6 @@ export default function SearchPage() {
   const location = useLocation();
   const { results } = location.state;
 
-  console.log(results);
   return (
     <>
       <NavBar />

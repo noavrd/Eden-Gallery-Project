@@ -6,7 +6,6 @@ import close from '../icon-close.svg';
 import { Link } from 'react-router-dom';
 export default function Search({ setSearch, mobile }) {
   const [results, setResults] = useState([]);
-  console.log(mobile);
   const getResultsFromInput = async (value) => {
     setResults([]);
     if (value.length < 3) {

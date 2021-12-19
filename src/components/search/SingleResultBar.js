@@ -2,7 +2,6 @@ export default function SingleResultBar({ result }) {
   const pic =
     result.default_img.folder + '/' + result.default_img.compressed_file_name;
 
-  console.log(result.name);
   return (
     <div className="single-result-bar">
       <div className="left-bar">

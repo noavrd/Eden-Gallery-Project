@@ -1,5 +1,4 @@
 export default function CollectionsScroller() {
-  console.log('enter');
   return (
     <ul className="dropdown-content ">
       <li className="drop-item">Collection 1</li>
