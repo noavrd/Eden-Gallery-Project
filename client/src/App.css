@@ -96,17 +96,25 @@ h2 {
     display: block;
     font: normal normal 600 12vh/5vh Sora;
     margin-top: 5vh;
+    margin-left: 6vw;
   }
 
   h2 {
     font: normal normal normal 5vh/8vh Comfortaa;
+    margin-left: 6vw;
   }
 
   .show-collections {
     display: none;
   }
+  .about {
+    margin-left: 6vw;
 
+    width: 80vw;
+  }
   .artist-picture {
+    margin-left: 6vw;
+
     box-shadow: 0px 30px 60px #0000001a;
     height: 80vh;
     width: 80vw;
@@ -114,5 +122,12 @@ h2 {
     margin: 0 auto;
     margin-top: 5vh;
     margin-right: 10vw;
+  }
+
+  .segments {
+    margin-left: 6vw;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    max-width: 70vw;
   }
 }

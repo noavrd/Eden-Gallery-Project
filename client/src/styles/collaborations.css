@@ -1,16 +1,11 @@
 .single-coll {
-  /* margin-top: 8vh; */
   margin: 8vh 0 0 9vw;
-  /* justify-content: center; */
   height: 50vh;
   display: grid;
-  /* grid-column-gap: 3vw; */
   grid-template-columns: 40vw 40vw;
 }
 .information-coll {
   background: #e0d7d7 0% 0% no-repeat padding-box;
-  /* margin: auto; */
-  /* align-items: center; */
   justify-content: center;
   padding-top: 10vh;
   padding-left: 5vw;
@@ -38,6 +33,21 @@
   padding-top: 3vh;
 }
 .pic-roll {
-  /* max-width: 35vw; */
   height: 50vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .single-coll {
+    margin: 8vh 3vw 0 3vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .information-coll {
+    max-width: 80vw;
+    /* margin-top: 30vh; */
+  }
+  .pic-roll {
+    max-width: 85vw;
+  }
 }

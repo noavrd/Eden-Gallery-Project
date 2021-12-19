@@ -46,3 +46,24 @@
   background-repeat: no-repeat;
   position: relative;
 }
+
+@media only screen and (max-width: 600px) {
+  #nft-background {
+    margin-left: 8vw;
+    max-width: 80vw;
+    padding-right: 3vw;
+  }
+  #nft-segment {
+    margin-left: 5vw;
+    max-width: 80vw;
+  }
+  #nft-btn {
+    width: 60vw;
+  }
+  #nft-picture {
+    margin-left: -10vw;
+  }
+  /* #nft-picture {
+    margin-left: auto;
+  } */
+}
