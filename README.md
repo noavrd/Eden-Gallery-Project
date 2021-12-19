@@ -7,8 +7,10 @@ The website is responsive and matches to mobile use
 
 ### This website build with React
 
+https://noa-gallery.herokuapp.com/
+
 ## How to run it?
 - Download the repo
 - Open the terminal
-- Run `cd client` & `npm i` 
+- Run `npm i` 
 - Run `npm start`
