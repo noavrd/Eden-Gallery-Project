@@ -38,16 +38,31 @@
 
 @media only screen and (max-width: 600px) {
   .single-coll {
-    margin: 8vh 3vw 0 3vw;
-    height: 50vh;
+    margin-top: 13vh;
+    margin-left: 0;
+    margin-left: 6vw;
     display: grid;
     grid-template-columns: 1fr;
   }
   .information-coll {
-    max-width: 80vw;
-    /* margin-top: 30vh; */
+    padding-top: 1vh;
+    max-width: 70vw;
   }
   .pic-roll {
-    max-width: 85vw;
+    max-width: 75vw;
+    max-height: 20vh;
+    width: 75vw;
+  }
+  .title-coll {
+    font-size: 3vh;
+  }
+
+  .details-coll {
+    font-size: 2vh;
+  }
+
+  .btn-coll {
+    padding-top: 0;
+    font-size: 2vh;
   }
 }
