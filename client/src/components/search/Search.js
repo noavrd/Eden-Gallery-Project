@@ -4,9 +4,9 @@ import search from '../navbar/search_icon.svg';
 import SingleResultBar from './SingleResultBar';
 import close from '../icon-close.svg';
 import { Link } from 'react-router-dom';
-export default function Search({ setSearch }) {
+export default function Search({ setSearch, mobile }) {
   const [results, setResults] = useState([]);
-
+  console.log(mobile);
   const getResultsFromInput = async (value) => {
     setResults([]);
     if (value.length < 3) {
@@ -31,7 +31,8 @@ export default function Search({ setSearch }) {
   };
   if (results === []) {
     return (
-      <div className="search-total">
+      <div
+        className={`${mobile === 'mobile' ? 'mobile-search' : 'search-total'}`}>
         <input
           placeholder="Search anything: artwork name, collection name & articles"
           className="search-input"
@@ -42,7 +43,8 @@ export default function Search({ setSearch }) {
     );
   } else {
     return (
-      <div className="search-total">
+      <div
+        className={`${mobile === 'mobile' ? 'mobile-search' : 'search-total'}`}>
         <input
           placeholder="Search anything: artwork name, collection name & articles"
           className="search-input"

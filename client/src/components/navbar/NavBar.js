@@ -37,9 +37,45 @@ export default function NavBar({ showInquire, setShowInquire, artworks }) {
   return (
     <div className="total-nav">
       {mobileOpen ? (
-        <div className="close-nav-mobile">
-          <div></div>
-          <img src={closeNav} alt="close" className="close" />
+        <div className="all-nav-mobile">
+          <div className="close-nav-mobile">
+            <div></div>
+            <img src={closeNav} alt="close" className="close" />
+          </div>
+          <div className="search-mobile">
+            <Search
+              artworks={artworks}
+              setSearch={setSearch}
+              mobile={'mobile'}
+            />
+            <div className="mobile-nav-total">
+              <Link to="/">
+                <span className="nav-item-mobile" id="home-item">
+                  Home
+                </span>
+              </Link>
+              {/* onClick={() => showScroller()} */}
+              <div>
+                <span className="nav-item-mobile">Collections</span>
+
+                <img
+                  src={scrollerUp}
+                  alt="scroller"
+                  className={
+                    showCollectionScroller
+                      ? 'up-scroller scroller'
+                      : 'down-scroller scroller'
+                  }
+                />
+              </div>
+              <div className="nav-item-mobile">Artworks</div>
+              <div className="nav-item-mobile">NFT</div>
+              <div className="nav-item-mobile">Collaborations</div>
+              <div className="nav-item-mobile">Press</div>
+              <div className="nav-item-mobile">About</div>
+              <div className="nav-item-mobile">Contact</div>
+            </div>
+          </div>
         </div>
       ) : (
         <div className="open-nav-mobile" onClick={() => clickMobileNav()}>
@@ -94,7 +130,13 @@ export default function NavBar({ showInquire, setShowInquire, artworks }) {
         <span className="inquire-btn" onClick={() => clickHandler()}>
           Inquire Now
         </span>
-        {search && <Search artworks={artworks} setSearch={setSearch} />}
+        {search && (
+          <Search
+            artworks={artworks}
+            setSearch={setSearch}
+            mobile={'not-mobile'}
+          />
+        )}
       </div>
     </div>
   );

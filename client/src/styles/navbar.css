@@ -48,6 +48,10 @@ a:active {
 .open-nav-mobile {
   display: none;
 }
+
+.close-nav-mobile {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .mobile-nav-icon {
     width: 10vw;
@@ -67,7 +71,7 @@ a:active {
     margin-top: 2vh;
   }
   .close {
-    /* margin-top: 3vh; */
+    margin-top: 3vh;
     animation-name: nav-inquire;
     animation-duration: 0.5s;
   }
@@ -84,10 +88,29 @@ a:active {
   .galy-sign-mobile {
     width: 12vw;
     height: 12vh;
-    /* margin-top: -5vh; */
-    /* position: absolute; */
-    /* margin-bottom: 5vh; */
   }
+
+  .search-mobile {
+    margin-left: 0vw;
+  }
+
+  .mobile-nav-total {
+    position: absolute;
+  }
+
+  .nav-item-mobile {
+    font: normal normal normal 2.5vh/5vh Comfortaa;
+    color: #b8b8b8;
+    cursor: pointer;
+    background-color: black;
+  }
+
+  /* change background */
+  .all-nav-mobile {
+    background-image: url('../hero-gradiant-bg.jpg');
+    background-color: black;
+  }
+
   .nav {
     display: none;
   }

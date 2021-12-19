@@ -59,3 +59,9 @@
   font: normal normal normal 6vh/5vh Sora;
   color: #fbfbfb;
 }
+@media only screen and (max-width: 600px) {
+  .mobile-search {
+    display: grid;
+    grid-template-columns: 70vw 5vw;
+  }
+}
