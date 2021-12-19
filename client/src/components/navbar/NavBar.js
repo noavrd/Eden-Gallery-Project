@@ -110,52 +110,54 @@ export default function NavBar({ showInquire, setShowInquire, artworks }) {
 
       <div className="nav">
         <img src={galySign} alt="galy-sign" className="sign" />
-        <Link to="/">
-          <span className="nav-item" id="home-item">
-            Home
+        <div className="items-without-sign">
+          <Link to="/">
+            <span className="nav-item" id="home-item">
+              Home
+            </span>
+          </Link>
+          <span className="dropdown">
+            <div onClick={() => showScroller()}>
+              <span className="nav-item">Collections</span>
+
+              <img
+                src={scrollerUp}
+                alt="scroller"
+                className={
+                  showCollectionScroller
+                    ? 'up-scroller scroller'
+                    : 'down-scroller scroller'
+                }
+              />
+            </div>
+            {showCollectionScroller && <CollectionsScroller />}
           </span>
-        </Link>
-        <span className="dropdown">
-          <div onClick={() => showScroller()}>
-            <span className="nav-item">Collections</span>
 
+          <span className="nav-item">Artworks</span>
+          <span className="nav-item">NFT</span>
+          <span className="nav-item">Collaborations</span>
+          <span className="nav-item">Press</span>
+          <span className="nav-item">About</span>
+          <span className="nav-item">Contact</span>
+          {!search && (
             <img
-              src={scrollerUp}
-              alt="scroller"
-              className={
-                showCollectionScroller
-                  ? 'up-scroller scroller'
-                  : 'down-scroller scroller'
-              }
+              src={search_icon}
+              alt="search-icon"
+              id="search"
+              onClick={() => showSearch()}
             />
-          </div>
-          {showCollectionScroller && <CollectionsScroller />}
-        </span>
-
-        <span className="nav-item">Artworks</span>
-        <span className="nav-item">NFT</span>
-        <span className="nav-item">Collaborations</span>
-        <span className="nav-item">Press</span>
-        <span className="nav-item">About</span>
-        <span className="nav-item">Contact</span>
-        {!search && (
-          <img
-            src={search_icon}
-            alt="search-icon"
-            id="search"
-            onClick={() => showSearch()}
-          />
-        )}
-        <span className="inquire-btn" onClick={() => clickHandler()}>
-          Inquire Now
-        </span>
-        {search && (
-          <Search
-            artworks={artworks}
-            setSearch={setSearch}
-            mobile={'not-mobile'}
-          />
-        )}
+          )}
+          <span className="inquire-btn" onClick={() => clickHandler()}>
+            Inquire Now
+          </span>
+          {search && (
+            <Search
+              artworks={artworks}
+              setSearch={setSearch}
+              mobile={'not-mobile'}
+            />
+          )}
+        </div>
       </div>
     </div>
   );
