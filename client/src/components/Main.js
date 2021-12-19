@@ -44,6 +44,7 @@ export default function Main() {
       <div className="artist-details">
         <div className="right">
           <div>
+            {/* <div className='spac'></div> */}
             <h1>Galy</h1>
             <h2>A digital artist for the 21st century</h2>
             <div className="about">

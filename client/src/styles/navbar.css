@@ -52,6 +52,9 @@ a:active {
 .close-nav-mobile {
   display: none;
 }
+.all-nav-mobile {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .mobile-nav-icon {
     width: 10vw;
@@ -74,10 +77,16 @@ a:active {
     margin-top: 3vh;
   }
 
-  .mobile-nav {
+  .all-nav-mobile {
     animation-name: nav-inquire;
     animation-duration: 0.8s;
+    display: block;
+
     background-image: url('../hero-gradiant-bg.jpg');
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   @keyframes nav-inquire {
     0% {
@@ -88,6 +97,20 @@ a:active {
     }
   }
 
+  .exit-nav-animation {
+    animation-name: nav-exit;
+    animation-duration: 1s;
+  }
+
+  @keyframes nav-exit {
+    0% {
+      -webkit-transform: translateY(0%);
+    }
+    100% {
+      -webkit-transform: translateY(-100%);
+    }
+  }
+
   .galy-sign-mobile {
     margin-left: 6vw;
 
@@ -95,31 +118,13 @@ a:active {
     height: 12vh;
   }
 
-  .search-mobile {
-    /* padding-left: 6vw; */
-  }
-
-  .mobile-nav-total {
-    /* position: absolute; */
-  }
   .nav-mobile-items {
     text-align: center;
-    /* transition: 0; */
-
-    /* background-color: black; */
   }
   .nav-item-mobile {
     font: normal normal normal 2.5vh/5vh Comfortaa;
     color: #b8b8b8;
     cursor: pointer;
-    /* background-color: black; */
-    /* position: relative; */
-  }
-
-  /* change background */
-  .all-nav-mobile {
-    background-image: url('../hero-gradiant-bg.jpg');
-    background-color: black;
   }
 
   .nav {

@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom';
 export default function NavBar({ showInquire, setShowInquire, artworks }) {
   const [showCollectionScroller, setShowCollectionScroller] = useState(false);
   const [search, setSearch] = useState(false);
-  const [mobileNav, setMobileNav] = useState('website');
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [exitNav, setExitNav] = useState(false);
 
   const clickHandler = () => {
     setShowInquire(!showInquire);
@@ -27,20 +27,35 @@ export default function NavBar({ showInquire, setShowInquire, artworks }) {
   };
 
   const clickMobileNav = () => {
-    if (mobileNav === 'website') {
-      setMobileNav('mobile');
+    if (mobileOpen) {
+      setExitNav(true);
+
+      //Time out for exit navbar animation
+      setTimeout(() => {
+        setMobileOpen(!mobileOpen);
+      }, 1000);
     } else {
-      setMobileNav('website');
+      setExitNav(false);
+      setMobileOpen(!mobileOpen);
     }
-    setMobileOpen(!mobileOpen);
   };
+
   return (
     <div
       className={`${
         mobileOpen ? 'mobile-nav total-nav' : 'total-nav nav-closed'
       }`}>
+      <div className="open-nav-mobile" onClick={() => clickMobileNav()}>
+        <img src={galySign} alt="galy-sign" className="galy-sign-mobile" />
+        <div className="open">
+          <div className="mobile-nav-icon"></div>
+          <div className="mobile-nav-icon"></div>
+          <div className="mobile-nav-icon"></div>
+        </div>
+      </div>
       {mobileOpen ? (
-        <div className="all-nav-mobile">
+        <div
+          className={`all-nav-mobile ${exitNav ? 'exit-nav-animation' : ''}`}>
           <div className="close-nav-mobile">
             <div></div>
             <img
@@ -88,17 +103,10 @@ export default function NavBar({ showInquire, setShowInquire, artworks }) {
           </div>
         </div>
       ) : (
-        <div className="open-nav-mobile" onClick={() => clickMobileNav()}>
-          <img src={galySign} alt="galy-sign" className="galy-sign-mobile" />
-          <div className="open">
-            <div className="mobile-nav-icon"></div>
-            <div className="mobile-nav-icon"></div>
-            <div className="mobile-nav-icon"></div>
-          </div>
-        </div>
+        ''
       )}
 
-      <div className={`${mobileNav} nav`}>
+      <div className="nav">
         <img src={galySign} alt="galy-sign" className="sign" />
         <Link to="/">
           <span className="nav-item" id="home-item">
