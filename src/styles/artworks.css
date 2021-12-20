@@ -12,7 +12,7 @@
   border: none;
   cursor: pointer;
   color: #ffffff;
-  margin: 15vh 0 5vh 40vw;
+  margin: 10vh 0 5vh 40vw;
 }
 #artworks-total {
   background-image: url('../hero-gradiant-bg.jpg');
@@ -70,6 +70,6 @@
   }
   .explore {
     width: 50vw;
-    margin: 5vh 0 5vh 15vw;
+    margin: 5vh 0 5vh 22vw;
   }
 }

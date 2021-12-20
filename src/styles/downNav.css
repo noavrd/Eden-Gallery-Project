@@ -92,7 +92,7 @@
   }
   .subscribe-reg {
     display: grid;
-    grid-template-columns: 60vw 35vw;
+    grid-template-columns: 60vw 32vw;
     margin-bottom: 2vh;
     margin-left: 0;
   }
@@ -129,6 +129,7 @@
   }
   .subscribe-btn,
   .subscribe-input {
+    padding-left: 3vw;
     font-size: 2.3vh;
   }
 
