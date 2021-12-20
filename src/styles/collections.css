@@ -112,3 +112,8 @@
     /* padding-left: 10vw; */
   }
 }
+
+.slide {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
