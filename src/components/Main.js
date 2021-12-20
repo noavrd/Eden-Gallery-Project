@@ -62,7 +62,7 @@ export default function Main() {
           <img src={galyPhoto} alt="galy-pic" className="artist-picture" />
         </div>
       </div>
-      <CollectionsShow />
+      <CollectionsShow artworks={artworks} />
       <Artworks artworks={artworks} />
       <Nft />
       <Collaboration />
