@@ -6,7 +6,7 @@ export default function CollectionSingle({ single }) {
     single.default_img.compressed_file_name;
   return (
     <div className="embla__slide">
-      <div className="embla__slide__inner">
+      <div>
         <div
           className="pic-collection"
           style={{

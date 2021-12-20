@@ -10,28 +10,28 @@ export default function DownNav() {
   return (
     <div className="total-down-nav">
       <div className="first-down">
-        <button className="first-down-item">Terms Of Use</button>
+        <div className="first-down-item">Terms Of Use</div>
         <br />
-        <button className="first-down-item">Privacy Policy</button>
+        <div className="first-down-item">Privacy Policy</div>
         <br />
-        <button className="first-down-item">Site Map</button>
+        <div className="first-down-item">Site Map</div>
         <br />
       </div>
 
       <div className="second-down">
-        <button className="second-down-item">Home</button>
+        <div className="second-down-item">Home</div>
         <br />
-        <button className="second-down-item">Collections</button>
+        <div className="second-down-item">Collections</div>
         <br />
-        <button className="second-down-item">Artworks</button>
+        <div className="second-down-item">Artworks</div>
         <br />
-        <button className="second-down-item">NFT</button>
+        <div className="second-down-item">NFT</div>
         <br />
-        <button className="second-down-item">Collaborations</button>
+        <div className="second-down-item">Collaborations</div>
         <br />
-        <button className="second-down-item">Press</button>
+        <div className="second-down-item">Press</div>
         <br />
-        <button className="second-down-item">About</button>
+        <div className="second-down-item">About</div>
         <br />
       </div>
 

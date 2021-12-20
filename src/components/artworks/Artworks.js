@@ -17,7 +17,7 @@ export default function Artworks({ artworks }) {
         ))}
       </div>
 
-      <button className="explore">Explore All Artworks</button>
+      <div className="explore">Explore All Artworks</div>
     </div>
   );
 }

@@ -22,7 +22,7 @@ export default function Collaboration() {
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam
             </div>
-            <button className="btn-coll">Read More</button>
+            <div className="btn-coll">Read More</div>
           </div>
           <img className="pic-roll" src={collOne} alt="first-coll" />
         </div>
@@ -35,7 +35,7 @@ export default function Collaboration() {
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam
             </div>
-            <button className="btn-coll">Read More</button>
+            <div className="btn-coll">Read More</div>
           </div>
           <img className="pic-roll" src={collTwo} alt="first-coll" />
         </div>
@@ -48,7 +48,7 @@ export default function Collaboration() {
               nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
               erat, sed diam
             </div>
-            <button className="btn-coll">Read More</button>
+            <div className="btn-coll">Read More</div>
           </div>
           <img className="pic-roll" src={collThree} alt="first-coll" />
         </div>

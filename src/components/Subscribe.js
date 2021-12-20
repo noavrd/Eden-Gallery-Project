@@ -11,7 +11,7 @@ export default function Subscribe() {
           type="email"
           className="subscribe-input"
         />
-        <button className="subscribe-btn">Subscribe</button>
+        <div className="subscribe-btn">Subscribe</div>
       </div>
     </div>
   );

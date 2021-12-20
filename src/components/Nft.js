@@ -12,7 +12,7 @@ export default function Nft() {
             believable. If you are going to use a passage of Lorem Ipsum, you
             need to be sure
           </span>
-          <button id="nft-btn">Checkout Gallyverse</button>
+          <div id="nft-btn">Checkout Gallyverse</div>
         </div>
       </div>
     </div>

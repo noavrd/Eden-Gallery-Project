@@ -46,7 +46,7 @@ export default function Inquire({ setShowInquire }) {
       <div className="end-inquire-information ">
         I would like to receive updates and contacts
       </div>
-      <button className="send-inquire">Inquire now</button>
+      <div className="send-inquire">Inquire now</div>
     </div>
   );
 }
